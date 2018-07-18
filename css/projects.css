@@ -101,6 +101,8 @@ height: 393px;
 #main_activity, #carpet_fragment, #enquiry_fragment{
 margin: 20px 20px 20px 50px;
 display: inline-flex;
+width: 221px;
+height: 393px;
 }
 
 
