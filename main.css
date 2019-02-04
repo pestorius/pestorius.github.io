@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {display:block}html {line-height:1}body {line-height:inherit}ol,ul {list-style:none}blockquote,q {quotes:none}blockquote:after,blockquote:before,q:after,q:before {content:'';content:none}table {border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+/*
+  element selectors
+*/
+
+/*
+  picking a bg color
+  pastel blue: #c5d1e5
+  lighter pastel blue: #dee3ea;
+  light creamy gold-ish: #f4c97c;
+  lighter desaturated khaki: #ede3bd;
+  light grey: #cec3b5;
+*/
+html {
+  background: #cec3b5;
+  font-family: "Trebuchet MS", Helvetica, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-size: 1.15em;
+  line-height: 1.2em;
+  margin-top: 0.4em;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+ul {
+  line-height: 1.2em;
+  list-style-type: circle;
+  padding-left: 1.5em;
+}
+
+article {
+  margin: 0 15%;
+  text-align: left;
+}
+
+nav ul {
+  background: #b7b1a8;
+  border-radius: 10px;
+  border-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 15%;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  flex: 1 0 120px;
+  font-size: 1.1em;
+  margin: 0.3em;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 600px){
+  nav li {
+    flex: 1 0 120px;
+    font-size: 1.1em;
+    margin: 0.3em;
+    padding: 0.5em 0;
+    transition: 0.3s;
+  }
+  
+  nav a:hover{
+    font-size: 1.3em;
+  }
+}
+
+nav a {
+  color: black;
+  line-height: 1.2em;
+  transition: 0.3s;
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  background-color: #6a7075;
+  color: white;
+  padding: 1em 15%;
+  margin-top: 1em;
+}
+
+footer img {
+  width: 3em;
+}
+
+/*
+  id selectors
+*/
+
+#header {
+  text-align: center;
+}
+
+#header-name {
+  font-family: "Chakra Petch", "Trebuchet MS", sans-serif;
+  /*or
+  font-family: 'Montserrat';
+  */
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0 auto;
+  padding-bottom: 0.8em;
+  padding-top: 1.5em;
+}
+
+#first-header {
+  transition: 0.3s;
+}
+
+#contact-me, #logo {
+  max-width: 4em;
+  width: 10vw;
+  z-index: 1;
+}
+
+#logo {
+  left: 0.3em;
+  position: fixed;
+  right: 0.3em;
+  top: 0.3em;
+}
+
+#fixed-social {
+  position: fixed;
+  right: 0.3em;
+  top: 0.3em;
+  transition: 0.3s;
+}
+
+#dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+}
+
+#dropdown-content img {
+  display: block;
+  margin-top: 0.5em;
+  max-width: 4em;
+  width: 10vw;
+}
+
+#photography-fig img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  #fixed-social:hover #dropdown-content {
+  max-height: 100%;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.4s ease-in;
+  }
+  
+  #photography-container {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-columns: 49% 49%;
+  }
+  #photography-heading {
+    text-align: center;
+  }
+
+  #photography-paragraph {
+    font-size: 1.25em;
+    margin: auto;
+  }
+
+  #photography-fig img {
+    width: 100%;
+  }
+}
+
+/*
+  class selectors
+*/
+.italic {
+  font-style: italic;
+}
+
+.resume-ul {
+  margin-bottom: 0.7em;
+}
+
+.resume-h3 {
+  margin: 0;
+}
+
+.row-of-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row-of-pics img {
+  margin: 1em 0;
+}
+
+.row-of-pics figcaption {
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.footer-email {
+  color: white;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+}

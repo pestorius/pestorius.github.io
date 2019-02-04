@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta charset="utf-8" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="../main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Montserrat" rel="stylesheet" /> 
+</head>
+<body>
+  <header id="header">
+    <a href="#top" title="To the top">
+    <img src="../images/to-the-top.png" alt="Image of a home button" id="logo" /></a>
+    <h1 id="header-name">Farhan Aslam</h1>
+    <section id="fixed-social">
+      <a href="mailto:farhaangauhar@yahoo.com" title="Email">
+      <img src="../images/contact.png" alt="Image of letter to contact me" id="contact-me" /></a>
+      <div id="dropdown-content">
+        <a class="new-tab" href="https://www.linkedin.com/in/farhanga/" title="LinkedIn">
+        <img src="../images/linkedin.png" alt="LinkedIn logo" /></a>
+        <a class="new-tab" href="https://github.com/pestorius/" title="GitHub">
+        <img src="../images/github.png" alt="GitHub logo" /></a>
+      </div>
+    </section>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="./">Projects</a></li>
+      <li><a href="../resume/">Resume</a></li>
+      <li><a href="../extras">Extras</a></li>
+      <li><a href="./#contact-footer">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <article>
+      <h1 id="first-header">Projects</h1>
+      <h2 class="underline">IITSecurity</h2>
+      <p>IITSecurity is an Android mobile application I helped build with my two team mates
+      Jose Casarrubios and Yael Torres in a mobile application development course. It aims 
+      to improve security on campus by allowing students to call Public Safety at the push
+      of a button, as well as view a map of previous incidents on a map to identify and avoid 
+      danger zones. This app can be used by the Public Safety as well, allowing them to view 
+      and respond to recent incidents, with the app providing them with the quickest route to
+      a student in trouble.</p>
+      <figure class="row-of-pics">
+        <img id="panic-button" src="../images/Picture1.png" alt="Screenshot of panic button" />
+        <img id="timer" src="../images/Picture2.png" alt="Screenshot of Timer" />
+        <img id="map" src="../images/Picture3.png" alt="Screenshot of Map" />
+        <figcaption>The first three images are screenshots of the user interface for the student side
+      of the application.</figcaption>
+      </figure>
+      <p>The first image shows a large panic button, which appears as soon as a student
+      opens the app, allowing them to quickly tap on the button when in an emergency, which 
+      calls public safety. The victim's precise location is also sent to public safety, in
+      case a student is unable to communicate during an emergency.</p>
+      <p>Since accidental tapping of the button can occur, we have implemented a timer that
+      waits five seconds before calling public safety, allowing students to cancel the call
+      if needed, as shown in the second image.</p>
+      <p>The third image displays another functionality for the student side of the application
+      that allows users to view a map of where previous incidents have occurred. This could be 
+      used to help a student plan a journey ahead of time, allowing them to avoid areas with
+      higher crime potential. The pins on the map are color-coded, indicating the type of incident
+      that occurred (robbery, assault, sexual assault, etc.).</p>
+      <figure class="row-of-pics">
+        <img id="recent-events" src="../images/Picture5.png" alt="Screenshot of recent events" />
+        <img id="route" src="../images/Picture6.png" alt="Screenshot of route" />
+        <img id="documented-events" src="../images/Picture7.png" alt="Screenshot of documented events" />
+      <figcaption>These next three images are screenshots of the user interface for the public safety
+      side of the application.</figcaption>
+      </figure>
+      <p>The first image shows the user the recent events that have occurred. These are events
+      that have very recently occurring or are currently taking place. If an event was recently
+      attended to with details of the crime known, public safety can input data about the incident
+      by tapping the info circle on the right side of the event, which will shift the event from
+      the recent events list to the documented events list. If it is an event that is taking place,
+      public safety can quickly respond by tapping on the event, which brings them to the second image.</p>
+      <p>The second screenshot shows up when the user has tapped on an event. They are then given
+      the quickest route on Google Maps to the victim's location.</p>
+      <p>The third image shows the documented events list, which are a list of events that have
+      occurred in the past. These are the events that appear on the map in the student side of the
+      application.</p>
+      <p>This is a working application and not just a designed interface. The only functionality 
+      it currently lacks from being a usable app is the ability to call the authorities when the 
+      panic button is pressed</p>
+    </article>
+  </main>
+  
+  <footer id="contact-footer">
+    <h2>Learn more about me and my work:</h2>
+    <a class="new-tab" href="https://www.linkedin.com/in/farhanga/" title="LinkedIn">
+      <img src="../images/linkedin.png" alt="LinkedIn logo" /></a>
+    <a class="new-tab" href="https://github.com/pestorius/" title="GitHub">
+      <img src="../images/github.png" alt="GitHub logo" /></a>
+    <h2>Email me:</h2>
+    <a class="footer-email" href="mailto:faslam1@hawk.iit.edu" title="IIT Email">faslam1@hawk.iit.edu</a>
+    <a class="footer-email" href="mailto:farhaangauhar@yahoo.com" title="Yahoo Email">farhaangauhar@yahoo.com</a>
+  </footer>
+  <script src="../site.js"></script>
+</body>
+</html>

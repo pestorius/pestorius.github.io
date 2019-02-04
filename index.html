@@ -1,59 +1,116 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html id="top" lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<title>Farhan: Homepage</title>
-	
-	<link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-	
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta charset="utf-8" />
+  <title>Farhan Aslam</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Montserrat" rel="stylesheet" /> 
 </head>
-
 <body>
-	<header>
-	<h1>Farhan Aslam</h1>
-	</header>
-	
-	<section id="social">
-		<a href="mailto:faslam1@hawk.iit.edu" title="faslam1@hawk.iit.edu">
-			<img src="iit.png" alt="IIT"></a>
-		<a href="https://www.linkedin.com/in/farhanga/" target="_blank" title="My LinkedIn Profile">
-			<img src="linkedin.png" alt="LinkedIn"></a>
-	</section>
-	
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="resume.html">Resume</a>
-		<a href="projects.html">Projects</a>
-	</nav>
-	
-	<section id="about_me">
-		<h2><strong>About me</strong></h2>
-		<p>Travelling from the other side of the globe, I have come a far way from Malaysia to achieve my goals and explore new opportunities. I began my journey in Oakton Community College, where I dived into the basics of Computer Science. 2 years later I've transferred to Illinois Institute of Technology to pursue my Bachelor's Degree in Computer Science. <br>I am currently a senior at Illinois Institute of Technology, and I've gained a vast knowledge of techniques and practices in Computer Science and related fields. </p>
-	</section>
-	
-	<section id="plans">
-		<h2><strong>What I'm Up To</strong></h2>
-		<p>I'm currently learning about data retrieval, operating systems, digital systems, technical communication, and some poetry. In my free time I try to learn and master certain skills that interest me. Skills I'm currently trying to learn:
-		<ul>
-			<li>Violin</li>
-			<li>Android application development</li>
-			<li>Web development</li>
-			<li>Data Retrieval</li>
-		</ul>
-	</section>
-	
-	<section id="learn_more">
-		<h2><strong>Learn More About Me</strong></h2>
-		<p>Contact me at <a href="mailto:faslam1@hawk.iit.edu" title="faslam1@hawk.iit.edu">faslam1@hawk.iit.edu</a>
-		<p>Check out my <a href="resume.html">resume</a>.</p>
-		<p>Take a look at some of my <a href="projects.html">projects</a>.</p>
-	</section>
-	
-	<footer></footer>
+  <header id="header">
+    <a href="#top" title="To the top">
+    <img src="images/to-the-top.png" alt="Image of a home button" id="logo" /></a>
+    <h1 id="header-name">Farhan Aslam</h1>
+    <section id="fixed-social">
+      <a href="mailto:farhaangauhar@yahoo.com" title="Email">
+      <img src="images/contact.png" alt="Image of letter to contact me" id="contact-me" /></a>
+      <div id="dropdown-content">
+        <a class="new-tab" href="https://www.linkedin.com/in/farhanga/" title="LinkedIn" >
+        <img src="images/linkedin.png" alt="LinkedIn logo" /></a>
+        <a class="new-tab" href="https://github.com/pestorius/" title="GitHub">
+        <img src="images/github.png" alt="GitHub logo" /></a>
+      </div>
+    </section>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="./projects/">Projects</a></li>
+      <li><a href="./resume/">Resume</a></li>
+      <li><a href="./extras">Extras</a></li>
+      <li><a href="./#contact-footer">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+  
+    <article>
+      <h1 id="first-header">About Me</h1>
+      <p>Travelling from the other side of the globe, I have come a far way from Malaysia to 
+      achieve my goals and explore new opportunities. I began my journey in Oakton Community 
+      College, where I dived into the basics of Computer Science. 2 years later I've transferred 
+      to Illinois Institute of Technology to pursue my Bachelor's Degree in Computer Science. I 
+      am currently a senior at Illinois Institute of Technology, and I've gained a vast knowledge 
+      of techniques and practices in Computer Science and related fields.</p>
+    </article>
+
+    <article>
+      <h1>What I've Done</h1>
+      <h2 class="underline">Summer of 2018</h2>
+      <p>I've been spending most of my summer breaks in Malaysia since I began studying in the states.
+      It's a great chance for me to unwind and be as lazy as I want, but I try to be productive as well.
+      I use this free time to learn some new skills or use the skills I already have to build something.</p>
+      <h3 class="italic">Ukulele</h3>
+      <p>Ukuleles are relatively easier to learn so I decided to dedicate some time from my summer
+      to learn it. I spent around a month learning the basics of the ukulele, which involved learning
+      how to tune, strum, and play some songs with the easier chords.</p>
+      <p>I learned all this from a website that consisted of 3 easy-to-follow 
+      <a class="new-tab" href="https://willgrovewhite.com/learning-to-play-the-ukulele-lesson-one/" title="Link to lessons">
+      lessons</a> composed by Will Grove White. I wouldn't say I'm amazing at playing the
+      ukulele, but my knowledge for now is fairly basic.</p>
+      <h3 class="italic">Android Development</h3>
+      <p>I took a course in android application development in the fall of 2017, and it helped me discover
+      my love for software engineering. After that I've always wanted to create a simple app that I could
+      build and publish on the Play Store. My dad suggested I create an app for his business, so I spent
+      most of the summer building, publishing, and maintaining the app. It does not have many downloads
+      because it's simply a neat looking catalogue, but it was a great way to practice my software development
+      skills.</p>
+    </article>
+
+    <article>
+      <h1>What I'm Up To</h1>
+      <h2 class="underline">Fall of 2018</h2>
+      <p>During my semesters at Illinois Institute of Technology I don't have a great amount of free time
+      to learn many new skills or practice existing ones, but this semester I'm working (possibly) with
+      IIT's public safety department to improve and implement an app I worked on in my android app development
+      class which I have written about in the <a href="./projects/" title="Jump to project">projects</a>
+      section. I have proposed the idea of the app to public safety and they seem to be interested but I would have to
+      show improvement in the design and functionality before they can decide if they want to use the app.</p>
+    </article>
+    
+    <article>
+      <h1>What I Plan To Do</h1>
+      <p>I was able to secure a job as a software engineer at BAE Systems Applied Intelligence in Malaysia for 
+      when after I graduate. Although I'll be preoccupied with my job, I plan to keep on working on new skills 
+      as an escape from what I do from 9 to 5.</p>
+      <h3 class="italic">App Development</h3>
+      <p>I know, this isn't much of an escape because it is indeed software engineering, but for now it is a
+      passion and as long as I have ideas for an app I'm going to have that urge to create. In fact, I might 
+      have to continue developing and maintaining the IITSecurity app if needed. If IITSecurity gets the green
+      light by Illinois Tech's Public Safety Department, I would have to work remotely with my team to develop
+      the app for iOS as well.</p>
+      <h3>More skills I plan to learn:</h3>
+      <ul>
+        <li>Solve the Rubik's Cube</li>
+        <li>Basic violin</li>
+        <li>Music editing</li>
+        <li>Basic skateboarding</li>
+        <li>3D drawing</li>
+      </ul>
+    </article>
+  </main>
+  
+  <footer id="contact-footer">
+    <h2>Learn more about me and my work:</h2>
+    <a class="new-tab" href="https://www.linkedin.com/in/farhanga/" title="LinkedIn">
+      <img src="images/linkedin.png" alt="LinkedIn logo" /></a>
+    <a class="new-tab" href="https://github.com/pestorius/" title="GitHub">
+      <img src="images/github.png" alt="GitHub logo" /></a>
+    <h2>Email me:</h2>
+    <a class="footer-email" href="mailto:faslam1@hawk.iit.edu" title="IIT Email">faslam1@hawk.iit.edu</a>
+    <a class="footer-email" href="mailto:farhaangauhar@yahoo.com" title="Yahoo Email">farhaangauhar@yahoo.com</a>
+  </footer>
+  <script src="site.js"></script>
 </body>
 </html>
