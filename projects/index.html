@@ -10,16 +10,16 @@
 <body>
   <header id="header">
     <a href="#top" title="To the top">
-    <img src="../images/to-the-top.png" alt="Image of a home button" id="logo" /></a>
+      <img src="../assets/to-the-top.png" alt="To top of page icon" id="logo" /></a>
     <h1 id="header-name">Farhan Aslam</h1>
     <section id="fixed-social">
       <a href="mailto:farhaangauhar@yahoo.com" title="Email">
-      <img src="../images/contact.png" alt="Image of letter to contact me" id="contact-me" /></a>
+        <img src="../assets/contact.png" alt="Image of letter to contact me" id="contact-me" /></a>
       <div id="dropdown-content">
         <a class="new-tab" href="https://www.linkedin.com/in/farhanga/" title="LinkedIn">
-        <img src="../images/linkedin.png" alt="LinkedIn logo" /></a>
+          <img src="../assets/linkedin.png" alt="LinkedIn logo" /></a>
         <a class="new-tab" href="https://github.com/pestorius/" title="GitHub">
-        <img src="../images/github.png" alt="GitHub logo" /></a>
+          <img src="../assets/github.png" alt="GitHub logo" /></a>
       </div>
     </section>
   </header>
@@ -37,17 +37,17 @@
     <article>
       <h1 id="first-header">Projects</h1>
       <h2 class="underline">IITSecurity</h2>
-      <p>IITSecurity is an Android mobile application I helped build with my two team mates
+      <p>IITSecurity is an Android mobile application I built with my two class mates
       Jose Casarrubios and Yael Torres in a mobile application development course. It aims 
-      to improve security on campus by allowing students to call Public Safety at the push
-      of a button, as well as view a map of previous incidents on a map to identify and avoid 
+      to improve security on campus by allowing students to call the campus' Public Safety at the push
+      of a button, as well as view previous incidents on a map to identify and avoid 
       danger zones. This app can be used by the Public Safety as well, allowing them to view 
       and respond to recent incidents, with the app providing them with the quickest route to
       a student in trouble.</p>
       <figure class="row-of-pics">
-        <img id="panic-button" src="../images/Picture1.png" alt="Screenshot of panic button" />
-        <img id="timer" src="../images/Picture2.png" alt="Screenshot of Timer" />
-        <img id="map" src="../images/Picture3.png" alt="Screenshot of Map" />
+        <img id="panic-button" src="../assets/IITSecurity1.png" alt="Screenshot of panic button" />
+        <img id="timer" src="../assets/IITSecurity2.png" alt="Screenshot of Timer" />
+        <img id="map" src="../assets/IITSecurity3.png" alt="Screenshot of Map" />
         <figcaption>The first three images are screenshots of the user interface for the student side
       of the application.</figcaption>
       </figure>
@@ -64,35 +64,65 @@
       higher crime potential. The pins on the map are color-coded, indicating the type of incident
       that occurred (robbery, assault, sexual assault, etc.).</p>
       <figure class="row-of-pics">
-        <img id="recent-events" src="../images/Picture5.png" alt="Screenshot of recent events" />
-        <img id="route" src="../images/Picture6.png" alt="Screenshot of route" />
-        <img id="documented-events" src="../images/Picture7.png" alt="Screenshot of documented events" />
-      <figcaption>These next three images are screenshots of the user interface for the public safety
-      side of the application.</figcaption>
+        <img id="recent-events" src="../assets/IITSecurity4.png" alt="Screenshot of recent events" />
+        <img id="route" src="../assets/IITSecurity5.png" alt="Screenshot of route" />
+        <img id="documented-events" src="../assets/IITSecurity6.png" alt="Screenshot of documented events" />
+        <figcaption>These next three images are screenshots of the user interface for the public safety side of the application.</figcaption>
       </figure>
       <p>The first image shows the user the recent events that have occurred. These are events
-      that have very recently occurring or are currently taking place. If an event was recently
+      that have recently occurred or are currently taking place. If an event was recently
       attended to with details of the crime known, public safety can input data about the incident
       by tapping the info circle on the right side of the event, which will shift the event from
       the recent events list to the documented events list. If it is an event that is taking place,
       public safety can quickly respond by tapping on the event, which brings them to the second image.</p>
-      <p>The second screenshot shows up when the user has tapped on an event. They are then given
+      <p>The second image shows up when the user has tapped on an event. They are then given
       the quickest route on Google Maps to the victim's location.</p>
-      <p>The third image shows the documented events list, which are a list of events that have
+      <p>The third image shows the documented events list, which is a list of events that have
       occurred in the past. These are the events that appear on the map in the student side of the
       application.</p>
-      <p>This is a working application and not just a designed interface. The only functionality 
+      <p>This is a working application and not just a designed wireframe. The only functionality 
       it currently lacks from being a usable app is the ability to call the authorities when the 
-      panic button is pressed</p>
+      panic button is tapped.</p>
+    </article>
+    
+    <article>
+      <h2 id="carpet-inn" class="underline">Carpet-Inn</h2>
+      <p>Carpet-Inn is an Android mobile application that I developed and published for a local home decoration company. Following from the success of Carpet-Inn's website, the owner wanted to improve brand exposure by having a mobile application that could display the business' goods quickly and allow for users to browse through them seamlessly.</p>
+      <figure class="row-of-pics">
+        <img id="main_activity" src="../assets/CarpetInn1.png" alt="Main Activity" />
+        <img id="carpet_fragment" src="../assets/CarpetInn2.png" alt="Carpet Fragment" />
+        <img id="enquiry_fragment" src="../assets/CarpetInn3.png" alt="Enquiry Fragment" />
+      </figure>
+      <p>This project was a good way for me to further improve my knowledge in Android application development as I had to explore new concepts and implementations that could fulfill the design and performance expectations of potential clients.</p>
+      <p>The main purpose of the application was to fetch information from the company's website and display the rugs, along with their designs and sizes. When the application is first opened, there is a splash screen that displays a graphic for 3 seconds while loading the relevant html pages into a Jsoup document.</p>
+      <p>The main activity of the application had a view pager that displayed three tabs as shown in the first picture above. View pager is a relatively new class to promote material design so it was quite the challenge learning about the methods used in this class. A custom adapter was used to display the custom listview of rugs.</p>
+      <p>A dialog fragment was implemented as seen in the second picture that appears when a user clicks on a list item. In this fragment they are able to zoom in on the enlarged picture in order to observe the selected rug in more detail. The user can also share a link to the rug on the company website or contact the owner through multiple mediums regarding the selected rug.</p>
+      <p>A search function was later implemented in an update that would allow users to filter through the many rugs available.</p>
+      <p>The biggest challenge in this project was dealing with bitmaps (graphics) efficiently. Since the images fetched from the website were meant for PC viewing, the images had resolutions higher than needed for mobile phone screens, which caused "OutOfMemoryException"s. It took some time to figure out that these large images were causing the errors and coming up with a solution that involved a whole new understanding of application memory management.</p>
+      <p>I plan to continue maintaning this application, performing fixes and improvements when needed. I am currently working on developing this application for iOS devices.</p>
+    </article>
+    
+    <article id="mieslist">
+      <h2 id="mieslist" class="underline">MiesList</h2>
+      <p>MiesList was a prototype I worked on with four other students in a course. We designed a concept and interface for an application that allows students in a campus to trade items with each other within that respective campus. This would be a service similar to Amazon, Craigslist, and Facebook Marketplace, except that it would be more convenient, safe, and affordable.</p>
+      <figure class="row-of-pics">
+        <img id="menu" src="../assets/MiesList1.png" alt="Menu">
+        <img id="payment" src="../assets/MiesList2.png" alt="Payment">
+        <img id="tracking" src="../assets/MiesList3.png" alt="Tracking">
+      </figure>
+      <p>The first image displays the user interface of the main screen that shows up when a user opens the app. It displays featured items which are determined by an item's popularity, or it can display items that is on a student's course booklist, since we provide users the option to submit their list of courses and the application works in the background to determine the books needed for the courses provided. The main screen also contains a button that allows a student to quickly list and item for sale.</p>
+      <p>The second image shows the payment methods involved when buying an item. A student can choose to pay for an item by card or by electronic payment methods such as PayPal and Venmo. The buyer can also decide if they want the item delivered or if they want to schedule a meeting with the seller to collect the item. This is convenient since students are trading within campus.</p>
+      <p>The final image is a screenshot of the order tracking page that provides the buyer with the status of their order and a tracking number.</p>
+      <p>For more details about the idea of the application, click <a href="https://www.youtube.com/watch?v=D0UOKAi7ces#action=share" target="_blank">here</a> to watch a video.</p>	
     </article>
   </main>
   
   <footer id="contact-footer">
     <h2>Learn more about me and my work:</h2>
     <a class="new-tab" href="https://www.linkedin.com/in/farhanga/" title="LinkedIn">
-      <img src="../images/linkedin.png" alt="LinkedIn logo" /></a>
+      <img src="../assets/linkedin.png" alt="LinkedIn logo" /></a>
     <a class="new-tab" href="https://github.com/pestorius/" title="GitHub">
-      <img src="../images/github.png" alt="GitHub logo" /></a>
+      <img src="../assets/github.png" alt="GitHub logo" /></a>
     <h2>Email me:</h2>
     <a class="footer-email" href="mailto:faslam1@hawk.iit.edu" title="IIT Email">faslam1@hawk.iit.edu</a>
     <a class="footer-email" href="mailto:farhaangauhar@yahoo.com" title="Yahoo Email">farhaangauhar@yahoo.com</a>

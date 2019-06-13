@@ -1,11 +1,4 @@
 (function(){
-  // Check to make sure essential features are supported
-  if (typeof document.querySelector === 'undefined') {
-    // No? Then bye!!!
-    return;
-  }
-  console.log("Hello from JavaScript! You have querySelector!");
-  
   document.addEventListener('DOMContentLoaded', function(){
     // Diagnostic...make sure DOMContentLoaded has fired...
     console.log('OMG the DOM has loaded!');

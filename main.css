@@ -107,7 +107,10 @@ nav a {
 }
 
 figcaption {
+  display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -178,8 +181,17 @@ footer img {
   width: 10vw;
 }
 
+#headshot {
+  display: block;
+  margin: 2em auto 0 auto;
+}
+
 #photography-fig img {
   width: 100%;
+}
+
+#carpet-inn, #mieslist {
+  margin-top: 2em;
 }
 
 @media screen and (min-width: 600px) {
@@ -232,12 +244,12 @@ footer img {
 
 .row-of-pics img {
   margin: 1em 0;
+  height: 400px;
 }
 
 .row-of-pics figcaption {
   line-height: 1.3em;
   margin-bottom: 1em;
-  text-align: left;
 }
 
 .underline {
